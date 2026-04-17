@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Trophy } from "lucide-react";
+import { Users, Trophy, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { SectionHeader } from "./SectionHeader";
+import { GithubIcon } from "./BrandIcons";
 
 export function Hackathons() {
   const { t } = useLanguage();
@@ -53,10 +54,26 @@ export function Hackathons() {
                 </span>
               </div>
 
-              <h3 className="text-2xl font-semibold tracking-tight">{h.name}</h3>
-              <p className="mt-1 font-mono text-xs uppercase tracking-widest text-[color:var(--accent)]">
-                {h.event}
-              </p>
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-semibold tracking-tight">{h.name}</h3>
+                  <p className="mt-1 font-mono text-xs uppercase tracking-widest text-[color:var(--accent)]">
+                    {h.event}
+                  </p>
+                </div>
+                {h.repo && (
+                  <a
+                    href={h.repo}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="inline-flex flex-shrink-0 items-center gap-1 text-sm text-[color:var(--muted)] hover:text-[color:var(--accent)] transition-colors"
+                    aria-label={`GitHub repo: ${h.name}`}
+                  >
+                    <GithubIcon className="h-4 w-4" />
+                    <ArrowUpRight className="h-4 w-4" />
+                  </a>
+                )}
+              </div>
 
               <p className="mt-4 text-[color:var(--muted)] leading-relaxed">
                 {h.description}

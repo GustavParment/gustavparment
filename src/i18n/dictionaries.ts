@@ -160,6 +160,7 @@ export const dictionaries = {
             "Sprintplanering och rollfördelning för 7 utvecklare",
           ],
           stack: [".NET", "C#", "Claude 3.5 Sonnet", "OpenRouter", "AWS S3", "DynamoDB", "PdfPig"],
+          repo: "https://github.com/GustavParment/team_ericsson_hackathon",
         },
         {
           name: "HIL Pipeline — Team Saab",
@@ -173,6 +174,7 @@ export const dictionaries = {
             "Koordinerade delade miljöer mellan teammedlemmar",
           ],
           stack: ["GitLab CI/CD", "ROS", "Gazebo", "Python", "Tailscale", "WSL2", "Bash"],
+          repo: "https://github.com/GustavParment/team_saab_hackathon",
         },
       ],
     },
@@ -372,6 +374,7 @@ export const dictionaries = {
             "Planned the sprint and distributed roles across 7 developers",
           ],
           stack: [".NET", "C#", "Claude 3.5 Sonnet", "OpenRouter", "AWS S3", "DynamoDB", "PdfPig"],
+          repo: "https://github.com/GustavParment/team_ericsson_hackathon",
         },
         {
           name: "HIL Pipeline — Team Saab",
@@ -385,6 +388,7 @@ export const dictionaries = {
             "Coordinated shared environments across team members",
           ],
           stack: ["GitLab CI/CD", "ROS", "Gazebo", "Python", "Tailscale", "WSL2", "Bash"],
+          repo: "https://github.com/GustavParment/team_saab_hackathon",
         },
       ],
     },
