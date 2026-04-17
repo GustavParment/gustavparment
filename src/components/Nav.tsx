@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const sections = ["about", "skills", "experience", "projects", "education", "contact"] as const;
+const sections = ["about", "skills", "experience", "projects", "hackathons", "education", "contact"] as const;
 
 export function Nav() {
   const { t, locale, setLocale } = useLanguage();

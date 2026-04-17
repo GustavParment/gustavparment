@@ -7,6 +7,7 @@ export const dictionaries = {
       skills: "Kompetens",
       experience: "Erfarenhet",
       projects: "Projekt",
+      hackathons: "Hackathons",
       education: "Utbildning",
       contact: "Kontakt",
     },
@@ -130,8 +131,8 @@ export const dictionaries = {
           name: "CoShout",
           tag: "Mobil · Cross-platform",
           description:
-            "Cross-platform mobilapp för influencer-samarbeten. Flutter-frontend mot serverless-backend. Pågående migrering till Go för prestanda.",
-          stack: ["Flutter", "Dart", "TypeScript", "Go", "Serverless"],
+            "Cross-platform mobilapp för influencer-samarbeten. Flutter-frontend mot serverless-backend.",
+          stack: ["Flutter", "Dart", "TypeScript", "Supabase", "Serverless"],
           links: [
             { label: "App Store", href: "https://apps.apple.com/se/app/coshout/id6749793188" },
           ],
@@ -139,9 +140,45 @@ export const dictionaries = {
       ],
       more: "Se mer på GitHub",
     },
+    hackathons: {
+      label: "Hackathons",
+      number: "05",
+      title: "Team Lead — hackathons",
+      intro:
+        "Jag har lett två tvärfunktionella team i hackathons där vi gick från idé till demo på några dagar.",
+      roleBadge: "Team Lead",
+      items: [
+        {
+          name: "LLM Data Orchestrator",
+          event: "Ericsson Hackathon",
+          team: "7 personer",
+          description:
+            "AI-pipeline som förvandlar ostrukturerad ”data-chaos” till LLM-redo datasets. Byggd på .NET med Claude 3.5 Sonnet via OpenRouter. Oberoende agenter (Discover, Map, Clean, Validate, Migrate, Govern) koordineras av en central orkestrator med full data lineage i DynamoDB.",
+          highlights: [
+            "Arkitektur och agent-pipeline (.NET Minimal API)",
+            "Prompt engineering för Cleaning- och Validation-agenter",
+            "Sprintplanering och rollfördelning för 7 utvecklare",
+          ],
+          stack: [".NET", "C#", "Claude 3.5 Sonnet", "OpenRouter", "AWS S3", "DynamoDB", "PdfPig"],
+        },
+        {
+          name: "HIL Pipeline — Team Saab",
+          event: "GitLab DevSecOps Flow Hackathon",
+          team: "Team Saab",
+          description:
+            "CI/CD-pipeline för Hardware-in-the-Loop-testning av en Flappy Bird ROS-simulator. Två maskiner kopplade via Tailscale VPN kör simulate → deploy → test-stegen, där säkerhetskontroller mot sensor-output körs fjärrstyrt via SSH.",
+          highlights: [
+            "Designade pipelinen och SSH-flödet över Tailscale",
+            "Automatiserade safety checks mot live sensor-data",
+            "Koordinerade delade miljöer mellan teammedlemmar",
+          ],
+          stack: ["GitLab CI/CD", "ROS", "Gazebo", "Python", "Tailscale", "WSL2", "Bash"],
+        },
+      ],
+    },
     education: {
       label: "Utbildning",
-      number: "05",
+      number: "06",
       title: "Utbildning & språk",
       items: [
         { title: "Full-stack Javautvecklare", school: "Yrkeshögskola (YH)", period: "2023 – 2025" },
@@ -157,7 +194,7 @@ export const dictionaries = {
     },
     contact: {
       label: "Kontakt",
-      number: "06",
+      number: "07",
       title: "Låt oss bygga något tillsammans",
       intro:
         "Jag är öppen för uppdrag, samarbeten och intressanta problem. Hör av dig — jag svarar normalt inom ett dygn.",
@@ -182,6 +219,7 @@ export const dictionaries = {
       skills: "Skills",
       experience: "Experience",
       projects: "Projects",
+      hackathons: "Hackathons",
       education: "Education",
       contact: "Contact",
     },
@@ -305,8 +343,8 @@ export const dictionaries = {
           name: "CoShout",
           tag: "Mobile · Cross-platform",
           description:
-            "Cross-platform mobile app for influencer collaborations. Flutter frontend on a serverless backend. Ongoing migration to Go for performance.",
-          stack: ["Flutter", "Dart", "TypeScript", "Go", "Serverless"],
+            "Cross-platform mobile app for influencer collaborations. Flutter frontend on a serverless backend.",
+          stack: ["Flutter", "Dart", "TypeScript", "Supabase", "Serverless"],
           links: [
             { label: "App Store", href: "https://apps.apple.com/se/app/coshout/id6749793188" },
           ],
@@ -314,9 +352,45 @@ export const dictionaries = {
       ],
       more: "See more on GitHub",
     },
+    hackathons: {
+      label: "Hackathons",
+      number: "05",
+      title: "Team Lead — hackathons",
+      intro:
+        "I've led two cross-functional teams in hackathons, taking projects from idea to working demo in a matter of days.",
+      roleBadge: "Team Lead",
+      items: [
+        {
+          name: "LLM Data Orchestrator",
+          event: "Ericsson Hackathon",
+          team: "7-person team",
+          description:
+            "An AI pipeline that turns unstructured data chaos into LLM-ready datasets. Built on .NET with Claude 3.5 Sonnet via OpenRouter. Independent agents (Discover, Map, Clean, Validate, Migrate, Govern) are coordinated by a central orchestrator with full data lineage in DynamoDB.",
+          highlights: [
+            "Owned the architecture and agent pipeline (.NET Minimal API)",
+            "Prompt engineering for the Cleaning and Validation agents",
+            "Planned the sprint and distributed roles across 7 developers",
+          ],
+          stack: [".NET", "C#", "Claude 3.5 Sonnet", "OpenRouter", "AWS S3", "DynamoDB", "PdfPig"],
+        },
+        {
+          name: "HIL Pipeline — Team Saab",
+          event: "GitLab DevSecOps Flow Hackathon",
+          team: "Team Saab",
+          description:
+            "A CI/CD pipeline for Hardware-in-the-Loop testing of a Flappy Bird ROS simulator. Two machines connected over Tailscale VPN run the simulate → deploy → test stages, with safety checks on live sensor output executed remotely over SSH.",
+          highlights: [
+            "Designed the pipeline and SSH flow over Tailscale",
+            "Automated safety checks against live sensor data",
+            "Coordinated shared environments across team members",
+          ],
+          stack: ["GitLab CI/CD", "ROS", "Gazebo", "Python", "Tailscale", "WSL2", "Bash"],
+        },
+      ],
+    },
     education: {
       label: "Education",
-      number: "05",
+      number: "06",
       title: "Education & languages",
       items: [
         { title: "Full-stack Java Developer", school: "Higher Vocational Education (YH)", period: "2023 – 2025" },
@@ -332,7 +406,7 @@ export const dictionaries = {
     },
     contact: {
       label: "Contact",
-      number: "06",
+      number: "07",
       title: "Let's build something together",
       intro:
         "I'm open for freelance work, collaborations and interesting problems. Reach out — I usually reply within a day.",
