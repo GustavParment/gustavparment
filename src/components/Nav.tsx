@@ -24,21 +24,21 @@ export function Nav() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 sm:px-10 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-6 sm:px-10 h-16 flex items-center justify-between gap-6">
         <a
           href="#top"
-          className="font-mono text-sm tracking-tight text-[color:var(--foreground)] hover:text-[color:var(--accent)] transition-colors"
+          className="flex-shrink-0 font-mono text-sm tracking-tight text-[color:var(--foreground)] hover:text-[color:var(--accent)] transition-colors"
           aria-label="Gustav Parment"
         >
-          <span className="text-[color:var(--accent)]">~/</span>gustav-parment
+          <span className="text-[color:var(--accent)]">~/</span>gustavparment
         </a>
 
-        <div className="hidden md:flex items-center gap-8 text-sm">
+        <div className="hidden lg:flex items-center gap-5 text-sm">
           {sections.map((s, i) => (
             <a
               key={s}
               href={`#${s}`}
-              className="font-mono text-[color:var(--muted)] hover:text-[color:var(--foreground)] transition-colors"
+              className="whitespace-nowrap font-mono text-[color:var(--muted)] hover:text-[color:var(--foreground)] transition-colors"
             >
               <span className="text-[color:var(--accent)] mr-1">
                 {String(i + 1).padStart(2, "0")}.
@@ -48,7 +48,7 @@ export function Nav() {
           ))}
         </div>
 
-        <div className="flex items-center gap-1 rounded-full border border-[color:var(--border)] p-1 font-mono text-xs">
+        <div className="flex-shrink-0 flex items-center gap-1 rounded-full border border-[color:var(--border)] p-1 font-mono text-xs">
           <button
             type="button"
             onClick={() => setLocale("sv")}
