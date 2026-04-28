@@ -39,7 +39,7 @@ export function Contact() {
         />
 
         <div className="relative grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
-          <div>
+          <div className="min-w-0">
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight leading-tight">
               {t.contact.title}
             </h2>
@@ -48,32 +48,32 @@ export function Contact() {
             </p>
             <a
               href={`mailto:${EMAIL}`}
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[color:var(--foreground)] px-5 py-2.5 text-sm font-medium text-[color:var(--background)] hover:opacity-90 transition-opacity"
+              className="mt-6 inline-flex max-w-full items-center gap-2 rounded-full bg-[color:var(--foreground)] px-5 py-2.5 text-sm font-medium text-[color:var(--background)] hover:opacity-90 transition-opacity"
             >
-              <Mail className="h-4 w-4" />
-              {EMAIL}
+              <Mail className="h-4 w-4 shrink-0" />
+              <span className="truncate">{EMAIL}</span>
             </a>
           </div>
 
-          <ul className="grid gap-2">
+          <ul className="grid gap-2 min-w-0">
             {items.map(({ label, value, href, Icon, external }) => (
-              <li key={label}>
+              <li key={label} className="min-w-0">
                 <a
                   href={href}
                   target={external ? "_blank" : undefined}
                   rel={external ? "noreferrer noopener" : undefined}
                   className="group flex items-center gap-4 rounded-xl border border-[color:var(--border)] bg-[color:var(--background)] px-4 py-3 hover:border-[color:var(--accent)] transition-colors"
                 >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[color:var(--surface)] text-[color:var(--accent)]">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[color:var(--surface)] text-[color:var(--accent)]">
                     <Icon className="h-4 w-4" />
                   </span>
-                  <span className="flex-1">
+                  <span className="flex-1 min-w-0">
                     <span className="block font-mono text-xs uppercase tracking-widest text-[color:var(--muted)]">
                       {label}
                     </span>
-                    <span className="block text-sm text-[color:var(--foreground)]">{value}</span>
+                    <span className="block truncate text-sm text-[color:var(--foreground)]">{value}</span>
                   </span>
-                  <ArrowUpRight className="h-4 w-4 text-[color:var(--muted)] group-hover:text-[color:var(--accent)] transition-colors" />
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-[color:var(--muted)] group-hover:text-[color:var(--accent)] transition-colors" />
                 </a>
               </li>
             ))}

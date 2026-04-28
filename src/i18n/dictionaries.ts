@@ -54,11 +54,11 @@ export const dictionaries = {
         },
         {
           title: "Data & Moln",
-          items: ["PostgreSQL", "NoSQL", "API:er", "AWS", "Google Cloud", "Supabase"],
+          items: ["PostgreSQL", "NoSQL", "API:er", "AWS", "Google Cloud", "Firebase", "Supabase"],
         },
         {
           title: "Säkerhet",
-          items: ["Cybersäkerhet", "Etisk hackning", "GDPR-efterlevnad"],
+          items: ["Cybersäkerhet", "Etisk hackning", "GDPR-efterlevnad", "Parrot OS", "Kali"],
         },
       ],
     },
@@ -268,11 +268,11 @@ export const dictionaries = {
         },
         {
           title: "Data & Cloud",
-          items: ["PostgreSQL", "NoSQL", "APIs", "AWS", "Google Cloud", "Supabase"],
+          items: ["PostgreSQL", "NoSQL", "APIs", "AWS", "Google Cloud", "Firebase", "Supabase"],
         },
         {
           title: "Security",
-          items: ["Cybersecurity", "Ethical hacking", "GDPR compliance"],
+          items: ["Cybersecurity", "Ethical hacking", "GDPR compliance", "Parrot OS", "Kali"],
         },
       ],
     },
