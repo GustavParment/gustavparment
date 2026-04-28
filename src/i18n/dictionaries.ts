@@ -42,7 +42,7 @@ export const dictionaries = {
       groups: [
         {
           title: "Backend",
-          items: ["Java", "Spring Boot", "Go", "Node.js", "Dart"],
+          items: ["Java", "Kotlin", "Spring Boot", "Go", "Node.js", "Dart"],
         },
         {
           title: "Frontend",
@@ -256,7 +256,7 @@ export const dictionaries = {
       groups: [
         {
           title: "Backend",
-          items: ["Java", "Spring Boot", "Go", "Node.js", "Dart"],
+          items: ["Java", "Kotlin", "Spring Boot", "Go", "Node.js", "Dart"],
         },
         {
           title: "Frontend",
