@@ -54,7 +54,7 @@ export const dictionaries = {
         },
         {
           title: "Data & Moln",
-          items: ["PostgreSQL", "NoSQL", "Open Banking API:er", "AWS", "Google Cloud", "Supabase"],
+          items: ["PostgreSQL", "NoSQL", "API:er", "AWS", "Google Cloud", "Supabase"],
         },
         {
           title: "Säkerhet",
@@ -268,7 +268,7 @@ export const dictionaries = {
         },
         {
           title: "Data & Cloud",
-          items: ["PostgreSQL", "NoSQL", "Open Banking APIs", "AWS", "Google Cloud", "Supabase"],
+          items: ["PostgreSQL", "NoSQL", "APIs", "AWS", "Google Cloud", "Supabase"],
         },
         {
           title: "Security",
